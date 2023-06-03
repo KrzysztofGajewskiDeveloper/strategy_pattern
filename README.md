@@ -15,3 +15,7 @@ typing.**Callable** is imported to define the Alias/**Interface** for the strate
 
 ```python
 ReportSaverStrategy = Callable[[str], None]
+
+comma_csv_strategy: ReportSaverStrategy = partial(save_as_csv, delimiter=',')
+encrypted_pdf_strategy: ReportSaverStrategy = partial(save_as_pdf, encryption=True)
+decrypted_pdf_strategy: ReportSaverStrategy = partial(save_as_pdf, encryption=False)
