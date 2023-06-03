@@ -43,7 +43,8 @@ def main():
         'duck': comma_csv_strategy,
         'cat': encrypted_pdf_strategy,
         'dog': decrypted_pdf_strategy,
-        'donkey': comma_csv_strategy}
+        'donkey': comma_csv_strategy
+    }
 
     for animal, save_as_strategy in animals.items():
         researcher.search_for(animal)
