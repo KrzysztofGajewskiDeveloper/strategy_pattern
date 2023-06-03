@@ -13,4 +13,5 @@ strategy_pattern.py demonstrates in a pythonic version of the Strategy Design Pa
 
 typing.**Callable** is imported to define the Alias/**Interface** for the strategy functions.
 
-**ReportSaverStrategy = Callable[[str], None]**
+```python
+ReportSaverStrategy = Callable[[str], None]
